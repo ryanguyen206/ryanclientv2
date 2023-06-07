@@ -40,8 +40,6 @@ function postnew() {
     console.log(newOne);
 
    
-  
-  
     $.ajax({
     	// run locally
         //url : "http://localhost:7071/api/ryanMongoWriter",
@@ -75,7 +73,9 @@ function createList(which, city) {
     }
 
     // run in cloud
-    $.get("https://ryancosmosdatawriter.azurewebsites.net/api/ryancosmosdatawriter/?name="+ param, function(data, status){
+    // $.get("https://ryancosmosdatawriter.azurewebsites.net/api/cosmosdatawriter/?name="+ param, function(data, status){
+     $.get("https://ryancosmosdatawriter.azurewebsites.net/api/ryanwritecosmos", function(data, status){
+
  
      // run local
       //$.get("http://localhost:7071/api/readfrommongo/?name=" + param, function(data, status){ 
