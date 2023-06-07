@@ -40,7 +40,7 @@ function postnew() {
     console.log(newOne);
 
    
-    $.ajax({
+  
   
     $.ajax({
     	// run locally
