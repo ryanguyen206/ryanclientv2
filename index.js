@@ -41,13 +41,17 @@ function postnew() {
 
    
     $.ajax({
+  
+    $.ajax({
     	// run locally
-        //url : "http://localhost:7071/api/kurtmongowriter",
+        //url : "http://localhost:7071/api/ryanMongoWriter",
+
+
         
         
         
         // run on azure
-        url : "https://ryancosmosdatawriter.azurewebsites.net/api/ryancosmosdatawriter",
+        url : "https://ryanwritemongo.azurewebsites.net/api/ryanmongowriter",
         
         type: "POST",
         data: JSON.stringify(newOne),
