@@ -73,12 +73,14 @@ function createList(which, city) {
     }
 
     // run in cloud
-    // $.get("https://ryancosmosdatawriter.azurewebsites.net/api/cosmosdatawriter/?name="+ param, function(data, status){
-     $.get("https://ryancosmosdatawriter.azurewebsites.net/api/ryanwritecosmos", function(data, status){
+    $.get("https://ryancosmosdatawriter.azurewebsites.net/api/cosmosdatawriter/?name="+ param, function(data, status){
+    //  $.get("https://ryancosmosdatawriter.azurewebsites.net/api/ryanwritecosmos", function(data, status){
 
  
      // run local
-      //$.get("http://localhost:7071/api/readfrommongo/?name=" + param, function(data, status){ 
+      //$.get("http://localhost:7071/api/ryanwritecosmos/?name=" + param, function(data, status){ 
+
+    // $.get("http://localhost:7071/api/ryanwritecosmos", function(data,status) {
 
     dataArray = JSON.parse(data);
     subsetArray = [];
