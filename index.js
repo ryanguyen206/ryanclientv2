@@ -44,12 +44,14 @@ function postnew() {
     	// run locally
         //url : "http://localhost:7071/api/ryanMongoWriter",
 
+        //url: "https://kurtwritetopubsub.azurewebsites.net/api/kurtrestaurantwriter",
 
+        url: "https://simplewritepubsub.azurewebsites.net/api/simplewritetopubsub",
         
-        
+        //https://kurtpubsub.webpubsub.azure.com;AccessKey=p/iuO4B31PVliio9K6jmjLv30+M7u6MXBN5jxW0mf94=;Version=1.0;
         
         // run on azure
-        url : "https://ryanwritemongo.azurewebsites.net/api/ryanmongowriter",
+        //url : "https://ryanwritemongo.azurewebsites.net/api/ryanmongowriter",
         
         type: "POST",
         data: JSON.stringify(newOne),
@@ -75,8 +77,8 @@ function createList(which, city) {
      //$.get("https://ryancosmosdatawriter.azurewebsites.net/api/ryanwritecosmos/?name=" + param, function(data, status){
 
  
-     // run local
-      //$.get("http://localhost:7071/api/ryanwritecosmos/?name=" + param, function(data, status){ 
+     //run local
+      //$.get("http://localhost:7071/api/newMongoReader/?name=" + param, function(data, status){ 
       $.get("https://newmongoreader.azurewebsites.net/api/newmongoreader/?name=" + param, function(data, status){ 
 
 
